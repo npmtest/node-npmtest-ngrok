@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for node-npmtest-ngrok/lib.npmtest_ngrok.js</title>
+    <title>Code coverage report for node-npmtest-ngrok/node_modules/ngrok/postinstall.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -190,27 +190,27 @@
     </style>
 </head>
 <body>
-<div class="header high">
+<div class="header medium">
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-ngrok">npmtest-ngrok (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-ngrok/lib.npmtest_ngrok.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-ngrok/node_modules/ngrok/postinstall.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">100% <small>(16 / 16)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">77.14% <small>(27 / 35)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">100% <small>(14 / 14)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">75% <small>(12 / 16)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">100% <small>(3 / 3)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">60% <small>(3 / 5)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">100% <small>(16 / 16)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">77.14% <small>(27 / 35)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../index.html">All files</a> &#187; <a href="index.html">node-npmtest-ngrok/</a> &#187; lib.npmtest_ngrok.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-ngrok/node_modules/ngrok/</a> &#187; postinstall.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
@@ -268,51 +268,20 @@
 52
 53
 54
-55</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
@@ -322,60 +291,124 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* istanbul instrument in package npmtest_ngrok */
-/*jslint
-    bitwise: true,
-    browser: true,
-    maxerr: 8,
-    maxlen: 96,
-    node: true,
-    nomen: true,
-    regexp: true,
-    stupid: true
-*/
-(function () {
-    'use strict';
-    var local;
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var os = require('os');
+var fs = require('fs');
+var Zip = require('decompress-zip');
+var request = require('request');
 &nbsp;
+var cdn = process.env.NGROK_CDN_URL || 'https://bin.equinox.io';
+var cdnPath = process.env.NGROK_CDN_PATH || '/c/4VmDzA7iaHb/ngrok-stable-';
+var cdnFiles = {
+	darwinia32:	cdn + cdnPath + 'darwin-386.zip',
+	darwinx64:	cdn + cdnPath + 'darwin-amd64.zip',
+	linuxarm:	cdn + cdnPath + 'linux-arm.zip',
+	linuxia32:	cdn + cdnPath + 'linux-386.zip',
+	linuxx64:	cdn + cdnPath + 'linux-amd64.zip',
+	win32ia32:	cdn + cdnPath + 'windows-386.zip',
+	win32x64:	cdn + cdnPath + 'windows-amd64.zip',
+	freebsdia32:	cdn + cdnPath + 'freebsd-386.zip',
+	freebsdx64:	cdn + cdnPath + 'freebsd-amd64.zip'
+};
 &nbsp;
+var arch = process.env.NGROK_ARCH || (os.platform() + os.arch());
+var cdnFile = cdnFiles[arch];
 &nbsp;
-    // run shared js-env code - pre-init
-    (function () {
-        // init local
-        local = {};
-        // init modeJs
-        local.modeJs = (function () {
-            try {
-                return typeof navigator.userAgent === 'string' &amp;&amp;
-                    typeof document.querySelector('body') === 'object' &amp;&amp;
-                    typeof XMLHttpRequest.prototype.open === 'function' &amp;&amp;
-                    'browser';
-            } catch (errorCaughtBrowser) {
-                return module.exports &amp;&amp;
-                    typeof process.versions.node === 'string' &amp;&amp;
-                    typeof require('http').createServer === 'function' &amp;&amp;
-                    'node';
-            }
-        }());
-        // init global
-        local.global = local.modeJs === 'browser'
-            ? window
-            : global;
-        // init utility2_rollup
-        local = local.global.utility2_rollup || local;
-        // init lib
-        local.local = local.npmtest_ngrok = local;
-        // init exports
-        if (local.modeJs === 'browser') {
-            local.global.utility2_npmtest_ngrok = local;
-        } else {
-            module.exports = local;
-            module.exports.__dirname = __dirname;
-            module.exports.module = module;
-        }
-    }());
-}());
+<span class="missing-if-branch" title="if path not taken" >I</span>if (!cdnFile) {
+<span class="cstat-no" title="statement not covered" >	console.error('ngrok - platform ' + arch + ' is not supported.');</span>
+<span class="cstat-no" title="statement not covered" >	process.exit(1);</span>
+}
 &nbsp;
+var localPath = __dirname + '/bin/';
+var localFile = localPath + 'ngrok.zip';
+&nbsp;
+console.log('ngrok - downloading binary ' + cdnFile + ' ...');
+&nbsp;
+request
+	.get(cdnFile)
+	.pipe(fs.createWriteStream(localFile))
+	.on('finish', function() {
+		console.log('ngrok - binary downloaded...');
+		extract();
+	})
+	.on('error', <span class="fstat-no" title="function not covered" >function(e) {</span>
+<span class="cstat-no" title="statement not covered" >		console.error('ngrok - error downloading binary.', e);</span>
+<span class="cstat-no" title="statement not covered" >		process.exit(1);</span>
+	});
+&nbsp;
+function extract() {
+	new Zip(localFile).extract({path: localPath})
+		.once('error', error)
+		.once('extract', function() {
+			var suffix = os.platform() === 'win32' ? <span class="branch-0 cbranch-no" title="branch not covered" >'.exe' </span>: '';
+			<span class="missing-if-branch" title="if path not taken" >I</span>if (suffix === '.exe')
+<span class="cstat-no" title="statement not covered" >				fs.writeFileSync(localPath + 'ngrok.cmd', 'ngrok.exe');</span>
+			fs.unlinkSync(localFile);
+			var target = localPath + 'ngrok' + suffix;
+			fs.chmodSync(target, 0755);
+			<span class="missing-if-branch" title="if path not taken" >I</span>if (!fs.existsSync(target) || fs.statSync(target).size &lt;= 0)
+<span class="cstat-no" title="statement not covered" >				return error(new Error('corrupted file ' + target));</span>
+			console.log('ngrok - binary unpacked.');
+			process.exit(0);
+		});
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function error(e) {</span>
+<span class="cstat-no" title="statement not covered" >	console.error('ngrok - error unpacking binary', e);</span>
+<span class="cstat-no" title="statement not covered" >	process.exit(1);</span>
+}
 &nbsp;</pre></td></tr>
 </table></pre>
 </div>

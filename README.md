@@ -1,7 +1,7 @@
 # test coverage for  [ngrok (v2.2.6)](https://github.com/bubenshchykov/ngrok#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-ngrok.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ngrok) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ngrok.svg)](https://travis-ci.org/npmtest/node-npmtest-ngrok)
 #### node wrapper for ngrok
 
-[![NPM](https://nodei.co/npm/ngrok.png?downloads=true)](https://www.npmjs.com/package/ngrok)
+[![NPM](https://nodei.co/npm/ngrok.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/ngrok)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-ngrok/tree/alpha)|
 |--:|:--|
@@ -9,11 +9,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-ngrok/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-ngrok/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-ngrok/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-ngrok/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-ngrok/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-ngrok/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-ngrok/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-ngrok/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-ngrok/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-ngrok%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-ngrok/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-ngrok/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-ngrok/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-ngrok/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-ngrok%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-ngrok/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-ngrok/build/test-report.html](https://npmtest.github.io/node-npmtest-ngrok/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-ngrok/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-ngrok/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-ngrok/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-ngrok/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-ngrok/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-ngrok/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-ngrok/build/screenCapture.npmPackageListing.svg)
 
@@ -71,13 +77,11 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "bubenshchykov",
-            "email": "a.bubenshchykov@gmail.com"
+            "name": "bubenshchykov"
         }
     ],
     "name": "ngrok",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/bubenshchykov/ngrok.git"

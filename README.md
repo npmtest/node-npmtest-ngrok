@@ -1,4 +1,7 @@
-# test coverage for  [ngrok (v2.2.6)](https://github.com/bubenshchykov/ngrok#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-ngrok.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ngrok) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ngrok.svg)](https://travis-ci.org/npmtest/node-npmtest-ngrok)
+# npmtest-ngrok
+
+#### basic test coverage for  [ngrok (v2.2.6)](https://github.com/bubenshchykov/ngrok#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-ngrok.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ngrok) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ngrok.svg)](https://travis-ci.org/npmtest/node-npmtest-ngrok)
+
 #### node wrapper for ngrok
 
 [![NPM](https://nodei.co/npm/ngrok.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/ngrok)

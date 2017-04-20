@@ -188,23 +188,23 @@
     </style>
 </head>
 <body>
-<div class="header medium">
+<div class="header low">
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-ngrok">npmtest-ngrok (v0.0.3)</a>
     </h1>
     <h1>Code coverage report for <span class="entity">node-npmtest-ngrok/node_modules/ngrok/postinstall.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">77.14% <small>(27 / 35)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">45.71% <small>(16 / 35)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">75% <small>(12 / 16)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">43.75% <small>(7 / 16)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">60% <small>(3 / 5)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">0% <small>(0 / 5)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">77.14% <small>(27 / 35)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">45.71% <small>(16 / 35)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
@@ -313,8 +313,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -322,19 +322,19 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -377,29 +377,29 @@ console.log('ngrok - downloading binary ' + cdnFile + ' ...');
 request
 	.get(cdnFile)
 	.pipe(fs.createWriteStream(localFile))
-	.on('finish', function() {
-		console.log('ngrok - binary downloaded...');
-		extract();
+	.on('finish', <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">		console.log('ngrok - binary downloaded...');</span>
+<span class="cstat-no" title="statement not covered">		extract();</span>
 	})
 	.on('error', <span class="fstat-no" title="function not covered">function(e) {</span>
 <span class="cstat-no" title="statement not covered">		console.error('ngrok - error downloading binary.', e);</span>
 <span class="cstat-no" title="statement not covered">		process.exit(1);</span>
 	});
 &nbsp;
-function extract() {
-	new Zip(localFile).extract({path: localPath})
+<span class="fstat-no" title="function not covered">function extract() {</span>
+<span class="cstat-no" title="statement not covered">	new Zip(localFile).extract({path: localPath})</span>
 		.once('error', error)
-		.once('extract', function() {
-			var suffix = os.platform() === 'win32' ? <span class="branch-0 cbranch-no" title="branch not covered">'.exe' </span>: '';
-			<span class="missing-if-branch" title="if path not taken">I</span>if (suffix === '.exe')
+		.once('extract', <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">			var suffix = os.platform() === 'win32' ? '.exe' : '';</span>
+<span class="cstat-no" title="statement not covered">			if (suffix === '.exe')</span>
 <span class="cstat-no" title="statement not covered">				fs.writeFileSync(localPath + 'ngrok.cmd', 'ngrok.exe');</span>
-			fs.unlinkSync(localFile);
-			var target = localPath + 'ngrok' + suffix;
-			fs.chmodSync(target, 0755);
-			<span class="missing-if-branch" title="if path not taken">I</span>if (!fs.existsSync(target) || fs.statSync(target).size &lt;= 0)
+<span class="cstat-no" title="statement not covered">			fs.unlinkSync(localFile);</span>
+<span class="cstat-no" title="statement not covered">			var target = localPath + 'ngrok' + suffix;</span>
+<span class="cstat-no" title="statement not covered">			fs.chmodSync(target, 0755);</span>
+<span class="cstat-no" title="statement not covered">			if (!fs.existsSync(target) || fs.statSync(target).size &lt;= 0)</span>
 <span class="cstat-no" title="statement not covered">				return error(new Error('corrupted file ' + target));</span>
-			console.log('ngrok - binary unpacked.');
-			process.exit(0);
+<span class="cstat-no" title="statement not covered">			console.log('ngrok - binary unpacked.');</span>
+<span class="cstat-no" title="statement not covered">			process.exit(0);</span>
 		});
 }
 &nbsp;
@@ -411,7 +411,7 @@ function extract() {
 </tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 15:41:04 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Thu Apr 20 2017 01:34:36 GMT+0000 (UTC)</div>
 </div>
 
 
